@@ -25,8 +25,9 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container main-nav">
+
         <a href="./index.html" class="logo"
-          ><span class="logo-brand">Web</span>Studio</a
+          ><span class="logo__text-brand">Web</span>Studio</a
         >
 <!-- site-nav -->
         <ul class="site-nav">
@@ -62,29 +63,33 @@
       <h1 class="visually-hidden">Portpholio page</h1>
       <section class="portfolio">
         <h2 class="visually-hidden">Site navigation</h2>
+        <div class="container">
 
-        <div class="container work">
-          <ul class="page-nav">
-            <li class="nav-btn">
+          <!-- list of button  -->
+          <ul class="portfolio-page__nav">
+            <li class="portfolio-page__nav-btn">
               <button type="button" class="button-secondary">Усі</button>
             </li>
-            <li class="nav-btn">
+            <li class="portfolio-page__nav-btn">
               <button type="button" class="button-secondary">Веб-сайти</button>
             </li>
-            <li class="nav-btn">
+            <li class="portfolio-page__nav-btn">
               <button type="button" class="button-secondary">Додатки</button>
             </li>
-            <li class="nav-btn">
+            <li class="portfolio-page__nav-btn">
               <button type="button" class="button-secondary">Дизайн</button>
             </li>
-            <li class="nav-btn">
+            <li class="portfolio-page__nav-btn">
               <button type="button" class="button-secondary">Маркетинг</button>
             </li>
           </ul>
-          <ul class="work-list">
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+
+          <!-- List of work exemples -->
+          <ul class="portfolio-page__work-list">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <!-- overlay -->
+                <div class="portfolio-page__product-thumb">
                   <img
                     class="work-item-link"
                     src="./images/portfolio/technokriak.jpg"
@@ -92,8 +97,8 @@
                     height="294"
                     alt="Сторінка сайту відкрита на ноутбуці з фото команди"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -101,24 +106,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Технокряк</h3>
-                  <p class="descr-work">Веб-сайт</p>
+                <!-- div to all card -->
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Технокряк</h3>
+                  <p class="portfolio-page__work-position">Веб-сайт</p>
                 </div></a
               >
             </li>
 
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/new-orlean.jpg"
                     width="370"
                     height="294"
                     alt="Два баскетболісти з мячем"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -126,24 +132,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Постер New Orlean vs Golden Star</h3>
-                  <p class="descr-work">Дизайн</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Постер New Orlean vs Golden Star</h3>
+                  <p class="portfolio-page__work-position">Дизайн</p>
                 </div></a
               >
             </li>
 
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/seafood.jpg"
                     width="370"
                     height="294"
                     alt="Макет логотипу ресторану Сиафуд"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -151,24 +157,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Ресторан Seafood</h3>
-                  <p class="descr-work">Додаток</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Ресторан Seafood</h3>
+                  <p class="portfolio-page__work-position">Додаток</p>
                 </div></a
               >
             </li>
 
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/prime.jpg"
                     width="370"
                     height="294"
                     alt="Фото навушників чорних"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -176,23 +182,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Проєкт Prime</h3>
-                  <p class="descr-work">Маркетинг</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Проєкт Prime</h3>
+                  <p class="portfolio-page__work-position">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/boxes.jpg"
                     width="370"
                     height="294"
                     alt="Фото двох коробок з лого проекту"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -200,23 +206,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Проєкт Boxes</h3>
-                  <p class="descr-work">Додаток</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Проєкт Boxes</h3>
+                  <p class="portfolio-page__work-position">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/inspiration-has-noborder.jpg"
                     width="370"
                     height="294"
                     alt="Монітор з головною сторінкою сайту"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -224,23 +230,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Inspiration has no Borders</h3>
-                  <p class="descr-work">Веб-сайт</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Inspiration has no Borders</h3>
+                  <p class="portfolio-page__work-position">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/limited-editions.jpg"
                     width="370"
                     height="294"
                     alt="Розгорнуте видання албому проекту"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -248,23 +254,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Видання Limited Edition</h3>
-                  <p class="descr-work">Дизайн</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Видання Limited Edition</h3>
+                  <p class="portfolio-page__work-position">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/lab.jpg"
                     width="370"
                     height="294"
                     alt="Розроблений макет лейби бренду"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -272,24 +278,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Проєкт LAB</h3>
-                  <p class="descr-work">Маркетинг</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Проєкт LAB</h3>
+                  <p class="portfolio-page__work-position">Маркетинг</p>
                 </div></a
               >
             </li>
 
-            <li class="work-item-portfolio">
-              <a class="work-item-card" href="">
-                <div class="product-thumb">
+            <li class="portfolio-page__work-item">
+              <a class="portfolio-page__work-link" href="">
+                <div class="portfolio-page__product-thumb">
                   <img
                     src="./images/portfolio/growing-business.jpg"
                     width="370"
                     height="294"
                     alt="На екрані ноутбука головна сторінка додатку"
                   />
-                  <div class="product-overlay">
-                    <p class="product-overlay-descr">
+                  <div class="portfolio-page__product-overlay">
+                    <p class="portfolio-page__product-overlay-descr">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -297,9 +303,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="work-item-descr">
-                  <h3 class="title-work">Growing Business</h3>
-                  <p class="descr-work">Додаток</p>
+                <div class="portfolio-page__work-descr">
+                  <h3 class="portfolio-page__work-name">Growing Business</h3>
+                  <p class="portfolio-page__work-position">Додаток</p>
                 </div></a
               >
             </li>
@@ -308,55 +314,57 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer">
-        <div class="address">
+     <!-- Footer -->
+     <footer class="footer">
+      <div class="container">
+        <div class="footer__address">
           <a href="./index.html" class="logo"
-            ><span class="logo-brand">Web</span
-            ><span class="logo-white">Studio</span></a
+            ><span class="logo__text-brand">Web</span
+            ><span class="logo__text-white">Studio</span></a
           >
-          <address class="address-link">
+          <address class="footer__address-link">
             <p>м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="footer-nav link">
-              <li class="item">
-                <a href="info@example.com" class="link">info@example.com</a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="mailto:info@devstudio.com" class="footer-nav__link"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <li class="footer-nav__item">
+                <a href="tel:+380961111111" class="footer-nav__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
         <!-- Social link -->
-        <div class="container-link">
-          <h3 class="social-link-title">приєднуйтесь</h3>
-          <ul class="social-list-footer list">
-            <li class="social-list-item">
-              <a class="social-list-link-footer" href="">
-                <svg class="social-list-icon" width="20" height="20">
+        <div class="footer-social-link">
+          <h3 class="footer-social-link__title">приєднуйтесь</h3>
+          <ul class="footer-social-link__list">
+            <li class="footer-social-link__item">
+              <a class="footer-social-link__link" href="">
+                <svg class="footer-social-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a class="social-list-link-footer" href="">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="footer-social-link__item">
+              <a class="footer-social-link__link" href="">
+                <svg class="footer-social-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a class="social-list-link-footer" href="">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="footer-social-link__item">
+              <a class="footer-social-link__link" href="">
+                <svg class="footer-social-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a class="social-list-link-footer" href="">
-                <svg class="social-list-icon" width="20" height="20">
+            <li class="footer-social-link__item">
+              <a class="footer-social-link__link" href="">
+                <svg class="footer-social-link__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
@@ -365,34 +373,35 @@
         </div>
 
         <!-- Форма Підписатися -->
-        <div class="container-submit">
-          <h3 class="social-link-title">Підпишіться на розсилку</h3>
-          
-          <form class="footer-form" autocomplete="off">
-           
-            <label class="form-fild-submit">
+        <div class="footer-submit">
+          <h3 class="footer-submit__title">Підпишіться на розсилку</h3>
+
+          <form class="footer-submit__form" autocomplete="off">
+            <!-- <div class="form-fild-submit"> -->
+            <label class="footer-submit__label">
               <input
                 type="email"
                 name="user-mail"
-                class="form-input"
+                class="footer-submit__input"
                 placeholder="E-mail"
                 autocomplete="on"
                 autofocus
               />
             </label>
 
-            <button type="submit" class="submit">
+            <button type="submit" class="button-submit">
               Підписатися
-              <svg class="submit-image" width="24" height="24">
+              <svg class="button-submit__image" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
-            
-          </form>          
+            <!-- </div> -->
+          </form>
         </div>
-        
       </div>
     </footer>
+        
+  
     <script src="./js/modal.js"></script>
   </body>
 </html>
