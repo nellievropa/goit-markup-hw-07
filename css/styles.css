@@ -158,8 +158,27 @@ a {
 .site-nav__link:focus {
   color: var(--brand-color);
 }
-.site-nav__link.current {
+.site-nav__link--current {
   color: var(--brand-color);
+}
+.site-nav__link--current {
+  position: relative;
+}
+.site-nav__link--current::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+
+  opacity: 1;
+  transition: opacity 1000ms var(--timing-function);
 }
 /* contact-nav */
 /* ul */
@@ -181,7 +200,7 @@ a {
 .contact-nav__item + .item {
   margin-left: 50px;
 }
-
+/* a */
 .contact-nav__link {
   display: block;
   padding-top: 32px;
@@ -207,45 +226,24 @@ a {
   fill: currentColor;
 }
 /* li */
-.item-mail {
+.contact-nav__link {
   display: flex;
   margin-right: 30px;
 }
-.item-phone {
-  display: flex;
+.contact-nav__link:not(:last-child) {
+  margin-right: 0;
 }
 /* .decor:hover, .decor:focus {
   fill: var(--brand-color);
 } */
 
-.link.mail,
+/* .link.mail,
 .link.phone {
   display: flex;
   align-items: center;
-}
-/* Підкреслення під час ховеру */
-.link.current {
-  position: relative;
-}
-.link.current::after {
-  content: "";
-  position: absolute;
-
-  left: 0;
-  bottom: 0;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--brand-color);
-  border-radius: 2px;
-
-  opacity: 1;
-  transition: opacity 1000ms var(--timing-function);
-}
-/* .link.current:hover::after {
-  opacity: 1;
 } */
+/* Підкреслення під час ховеру */
+
 
 
 /* Hero */
@@ -712,19 +710,19 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
 }
 
 /* Footer */
-.footer .container {
+.page-footer .container {
   display: flex;
   align-items: baseline;
   flex-direction: row;
   justify-content: flex-start;
 }
-.footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
 }
 
-.footer__address {
+.page-footer__address {
   display: block;
   margin-top: 0;
   margin-left: 0;
@@ -742,7 +740,7 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
 
 .address {
 }
-.footer__address-link {
+.page-footer__address-link {
   margin-top: 28px;
   /* margin-bottom: 9px; */
   color: var(--white);
@@ -753,7 +751,7 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   cursor: pointer;
 }
 
-.footer-nav__list {
+.page-footer-nav__list {
   margin-top: 9px;
   margin-bottom: 0;
   padding-top: 0;
@@ -764,24 +762,24 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
 
   transition: color 250ms var(--timing-function);
 }
-.footer-nav__link {
+.page-footer-nav__link {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-nav__link:hover,
-.footer-nav__link:focus {
+.page-footer-nav__link:hover,
+.page-footer-nav__link:focus {
   color: var(--brand-color);
 }
-.footer-nav__item:not(:first-child) {
+.page-footer-nav__item:not(:first-child) {
   margin-top: 9px;
 }
 
 /* Social link list */
-.footer-social-link {
+.page-footer-social-link {
   display: block;
   width: 206px;
   margin-right: 94px;
 }
-.footer-social-link__title {
+.page-footer-social-link__title {
   margin-bottom: 20px;
   margin-top: 0;
   margin-left: 0;
@@ -793,7 +791,7 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   color: var(--white);
 }
 /* UL */
-.footer-social-link__list {
+.page-footer-social-link__list {
   display: flex;
   justify-content: center;
 }
@@ -807,15 +805,15 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
 } */
 
 /* li */
-.footer-social-link__item {
+.page-footer-social-link__item {
   margin-right: 10px;
 }
-.footer-social-link__item:nth-child(4) {
+.page-footer-social-link__item:nth-child(4) {
   margin-right: 0;
 }
 
 /* a */
-.footer-social-link__link {
+.page-footer-social-link__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -827,18 +825,18 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
 
   transition: background-color 250ms var(--timing-function);
 }
-.footer-social-link__link:hover,
-.footer-social-link__link:focus {
+.page-footer-social-link__link:hover,
+.page-footer-social-link__link:focus {
   background-color: var(--brand-color);
 }
 
 /* Container SUBMIT */
-.footer-submit {
+.page-footer-submit {
   display: block;
   width: 570px;  
 }
 /* h3 */
-.footer-submit__title {
+.page-footer-submit__title {
   margin-bottom: 20px;
   margin-top: 0;
   margin-left: 0;
@@ -850,12 +848,12 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   color: var(--white);
 }
 /* form */
-.footer-submit__form {
+.page-footer-submit__form {
   display: flex;
   justify-content: space-between;
   margin: 0;
 }
-.footer-submit__label input {
+.page-footer-submit__label input {
   display: inline-block;
   margin: 0;
   margin-right: 12px;
@@ -868,12 +866,12 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit__input:hover,
-.footer-submit__input:focus {
+.page-footer-submit__input:hover,
+.page-footer-submit__input:focus {
   outline: none;
   border-color: var(--brand-color);
 }
-.footer-submit__label input::placeholder {
+.page-footer-submit__label input::placeholder {
   margin: 12px;
   padding: 0;
   width: 47px;
