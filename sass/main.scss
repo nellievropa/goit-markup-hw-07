@@ -1,5 +1,6 @@
-$brand-color: #2196f3;
+@import './utils/variables';
+@import './components/page-header';
+@import './components/logo';
+@import './components/site-nav';
 
-body {
-    background-color: $brand-color;
-}
+

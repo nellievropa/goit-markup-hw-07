@@ -130,7 +130,7 @@ a {
 } */
 /* a  --что єто??? непонятно*/
 .site-nav__link {
-  /* margin-top: 9px; */
+ 
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -138,8 +138,7 @@ a {
   text-decoration: none;
 }
 .site-nav__link {
-  /* margin-right: 50px; - це неправильно задані відступи!!!!  */
-  display: block;
+ 
   padding: 0;
   padding-top: 32px;
   padding-bottom: 32px;
