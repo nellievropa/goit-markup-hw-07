@@ -1,5 +1,5 @@
 .logo {
-    background-color: $brand-color;
+    
     text-decoration: none;
     color: $black;
     font-family: "Raleway";
@@ -9,15 +9,14 @@
     letter-spacing: 0.03em;
    
     // transition: color 250ms var(--timing-function);
+    &:hover {
+      color: $text-color-gray;
+    }
   }
   .logo__text-brand {
     color: $brand-color;
     // transition: color 250ms var(--timing-function);
   }
-  
-  &:hover {
-    color: $text-color-gray;
-  }
-  .logo__text-brand:hover {
+    .logo__text-brand:hover {
     color: $text-color-gray;
   }

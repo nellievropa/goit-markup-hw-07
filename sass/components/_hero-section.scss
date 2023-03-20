@@ -1,0 +1,21 @@
+.hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  
+    text-align: center;
+  
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $background-color-hero;
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

@@ -227,7 +227,7 @@ a {
 /* li */
 .contact-nav__link {
   display: flex;
-  margin-right: 30px;
+  
 }
 .contact-nav__link:not(:last-child) {
   margin-right: 0;
