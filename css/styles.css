@@ -737,8 +737,8 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   color: var(--text-color-gray);
 }
 
-.address {
-}
+/* .address {
+} */
 .page-footer__address-link {
   margin-top: 28px;
   color: var(--white);

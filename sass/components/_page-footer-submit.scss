@@ -1,3 +1,20 @@
+.page-footer-submit {
+    display: block;
+    width: 570px;
+}
+
+/* h3 */
+.page-footer-submit__title {
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+}
 .page-footer-submit__form {
     display: flex;
     justify-content: space-between;
@@ -13,14 +30,14 @@
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    background-color: var(--background-color);
+    background-color: $background-color;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .page-footer-submit__input:hover,
 .page-footer-submit__input:focus {
     outline: none;
-    border-color: var(--brand-color);
+    border-color: $brand-color;
 }
 
 .page-footer-submit__label input::placeholder {
@@ -51,7 +68,7 @@
     letter-spacing: 0.06em;
 
     border-radius: 4px;
-    color: var(--white);
+    color: $white;
     background-color: $brand-color;
     &:hover, &:focus {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

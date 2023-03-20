@@ -11,6 +11,7 @@
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
+    color: $text-color-main;
 }
 
 /* ul */
@@ -46,7 +47,7 @@
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    fill: var(--icon-color);
+    fill: $icon-color;
 
     transition: fill 250ms $timing-function,
         border-color 250ms $timing-function;
