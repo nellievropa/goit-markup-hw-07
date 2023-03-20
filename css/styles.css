@@ -741,7 +741,6 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
 }
 .page-footer__address-link {
   margin-top: 28px;
-  /* margin-bottom: 9px; */
   color: var(--white);
   font-style: normal;
   font-size: 14px;
