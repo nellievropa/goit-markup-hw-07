@@ -29,10 +29,10 @@
 
 /* li */
 .section-work__item {
-      display: block;
+    display: inline-block;
     width: 370px;
     height: 294px;
-position: relative;
+    position: relative;
     margin-right: 30px;
 }
 
@@ -68,7 +68,7 @@ position: relative;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white);
+    color: $white;
 }
 
 .section-work__descr-position-text:nth-child(2) {
